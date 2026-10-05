@@ -1,0 +1,24 @@
+{
+  "name": "chatpilotmain",
+  "private": true,
+  "description": "ChatPilot WhatsApp CRM — web app, main API, and AI widget service",
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "apps/ai-service",
+    "apps/marketing"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @chatpilot/web",
+    "dev:web": "npm run dev -w @chatpilot/web",
+    "dev:marketing": "npm run dev -w @chatpilot/marketing",
+    "dev:api": "npm run start -w @chatpilot/api",
+    "dev:ai": "npm run start -w @chatpilot/ai-service",
+    "build": "npm run build -w @chatpilot/web",
+    "build:web": "npm run build -w @chatpilot/web",
+    "build:marketing": "npm run build -w @chatpilot/marketing"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

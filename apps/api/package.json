@@ -1,0 +1,33 @@
+{
+  "name": "@chatpilot/api",
+  "version": "1.0.0",
+  "description": "ChatPilot WhatsApp Automation Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.937.0",
+    "@google/generative-ai": "^0.24.1",
+    "@hapi/boom": "^10.0.1",
+    "@sendgrid/mail": "^8.1.6",
+    "@supabase/supabase-js": "^2.86.0",
+    "@whiskeysockets/baileys": "^6.7.21",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.6.0",
+    "google-spreadsheet": "^5.0.2",
+    "groq-sdk": "^0.37.0",
+    "moment": "^2.30.1",
+    "multer": "^2.0.2",
+    "node-cron": "^4.2.1",
+    "nodemailer": "^7.0.11",
+    "pdf-parse": "^2.4.5",
+    "pino": "^10.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "razorpay": "^2.9.6"
+  }
+}

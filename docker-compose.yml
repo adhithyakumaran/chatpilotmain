@@ -1,0 +1,19 @@
+# Local WhatsApp CRM stack (production stays on Render/Vercel unless you migrate)
+services:
+  api:
+    build: ./apps/api
+    command: node index.js
+    ports: ["3002:3002"]
+    env_file: ./apps/api/.env
+  ai:
+    build: ./apps/ai-service
+    command: node ai_server.js
+    ports: ["4000:4000"]
+    env_file: ./apps/ai-service/.env
+  web:
+    build: ./apps/web
+    command: npm run start
+    ports: ["3003:3003"]
+    environment:
+      NEXT_PUBLIC_MAIN_API_URL: http://localhost:3002
+      NEXT_PUBLIC_SOCKET_URL: http://localhost:4000

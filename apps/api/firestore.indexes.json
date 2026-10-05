@@ -1,0 +1,12 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "messages",
+      "queryScope": "COLLECTION_GROUP",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "isMe", "order": "ASCENDING" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Local clones for audit/migration (never commit secrets or node_modules)
+/sources/
+
+node_modules/
+.env
+.env.local
+.env.*.local
+!**/.env.example
+dist/
+.next/
+*.db
+*.db-journal
+serviceAccountKey.json
